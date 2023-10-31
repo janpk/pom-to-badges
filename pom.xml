@@ -18,7 +18,7 @@
     <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
     <quarkus.platform.version>3.5.0</quarkus.platform.version>
     <skipITs>true</skipITs>
-    <detekt.version>1.22.0</detekt.version>
+    <detekt.version>1.23.1</detekt.version>
     <spotless-maven-plugin.version>2.36.0</spotless-maven-plugin.version>
     <ktfmt.version>0.43</ktfmt.version>
     <surefire-plugin.version>3.0.0-M9</surefire-plugin.version>
