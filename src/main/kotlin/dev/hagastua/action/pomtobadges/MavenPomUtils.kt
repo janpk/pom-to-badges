@@ -22,7 +22,7 @@ object MavenPomUtils {
       dependencySpecs.addAll(resolveFromDependencyManagement(model))
       dependencySpecs.addAll(resolveFromPlugins(model))
       dependencySpecs.addAll(resolveFromPluginManagement(model))
-    } catch (e: Exception) {
+    } catch (@Suppress("TooGenericExceptionCaught") e: Exception) {
       Log.error("Error parsing pom : $pomFile")
       Log.error(e)
     }
