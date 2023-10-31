@@ -10,7 +10,7 @@
   <properties>
     <assertj.version>3.24.2</assertj.version>
     <compiler-plugin.version>3.11.0</compiler-plugin.version>
-    <kotlin.version>1.9.10</kotlin.version>
+    <kotlin.version>1.9.20</kotlin.version>
     <maven.compiler.release>17</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -18,10 +18,10 @@
     <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
     <quarkus.platform.version>3.5.0</quarkus.platform.version>
     <skipITs>true</skipITs>
-    <detekt.version>1.22.0</detekt.version>
-    <spotless-maven-plugin.version>2.36.0</spotless-maven-plugin.version>
+    <detekt.version>1.23.1</detekt.version>
+    <spotless-maven-plugin.version>2.40.0</spotless-maven-plugin.version>
     <ktfmt.version>0.43</ktfmt.version>
-    <surefire-plugin.version>3.0.0-M9</surefire-plugin.version>
+    <surefire-plugin.version>3.2.1</surefire-plugin.version>
     <serialization.version>1.6.0</serialization.version>
   </properties>
   <dependencyManagement>
@@ -247,7 +247,7 @@
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>flatten-maven-plugin</artifactId>
-            <version>1.3.0</version>
+            <version>1.5.0</version>
             <executions>
               <execution>
                 <id>flatten</id>
