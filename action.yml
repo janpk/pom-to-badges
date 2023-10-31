@@ -21,7 +21,7 @@ runs:
       run: curl -Ls https://sh.jbang.dev | bash -s - app setup
       shell: bash
     - id: action
-      run: ~/.jbang/bin/jbang --repos 'github=https://maven.pkg.github.com/janpk/pom-to-badges.git/' --repos 'mavencentral' dev.hagastua.action.pomtobadges:pom-to-badges:999-SNAPSHOT
+      run: ~/.jbang/bin/jbang --repos 'github=https://maven.pkg.github.com/janpk/pom-to-badges.git/' --repos 'mavencentral' dev.hagastua.action.pomtobadges:pom-to-badges:1.0.0
       shell: bash
       env:
         JSON_INPUTS: ${{ toJSON(inputs) }}

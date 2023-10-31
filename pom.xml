@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>dev.hagastua.action.pomtobadges</groupId>
   <artifactId>pom-to-badges</artifactId>
-  <version>999-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
   <name>Pom To Badges</name>
   <description>Generate a badge and write to path</description>
   <properties>
