@@ -1,0 +1,28 @@
+name: 'Pom To Badges'
+author: 'Jan-Petter Krüger'
+description: 'A simple action that takes a list of maven pom dependencies to create version badges for'
+branding:
+  icon: bold
+  color: yellow
+inputs:
+  pomFile:
+    description: The pom file to search for dependency versions.
+    required: true
+  spec:
+    description: Json file with the specification of dependencies to create version badges for.
+    required: true
+  github-token:
+    description: GitHub token
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - id: install-jbang
+      run: curl -Ls https://sh.jbang.dev | bash -s - app setup
+      shell: bash
+    - id: action
+      run: ~/.jbang/bin/jbang --repos 'github=https://maven.pkg.github.com/janpk/pom-to-badges.git/' --repos 'mavencentral' dev.hagastua.action.pomtobadges:pom-to-badges:999-SNAPSHOT
+      shell: bash
+      env:
+        JSON_INPUTS: ${{ toJSON(inputs) }}
+        GITHUB_TOKEN: ${{ inputs.github-token }}

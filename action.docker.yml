@@ -1,0 +1,9 @@
+name: 'Pom To Badges'
+description: 'Description of my action'
+inputs:
+  github-token:
+    description: 'GitHub token'
+    required: false
+runs:
+  using: 'docker'
+  image: 'docker://ghcr.io/janpk/pom-to-badges.git:main'

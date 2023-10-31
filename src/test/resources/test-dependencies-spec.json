@@ -1,0 +1,30 @@
+{
+  "dependencies": [
+    {
+      "groupId": "io.quarkus.platform",
+      "artifactId": "quarkus-bom",
+      "badgeName": "Quarkus",
+      "savePath": "target/quarkus.svg",
+      "color": "Green",
+      "style": "plastic"
+    },
+    {
+      "groupId": "org.jetbrains.kotlin",
+      "artifactId": "kotlin-maven-plugin",
+      "badgeName": "Kotlin",
+      "savePath": "target/kotlin.svg"
+    },
+    {
+      "groupId": "io.quarkiverse.githubaction",
+      "artifactId": "quarkus-github-action",
+      "badgeName": "Quarkus Github Action",
+      "savePath": "target/quarkusaction.svg"
+    },
+    {
+      "groupId": "org.assertj",
+      "artifactId": "assertj-core",
+      "badgeName": "AssertJ",
+      "savePath": "target/assertj.svg"
+    }
+  ]
+}
