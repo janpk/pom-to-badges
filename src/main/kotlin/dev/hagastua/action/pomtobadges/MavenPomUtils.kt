@@ -77,13 +77,19 @@ object MavenPomUtils {
         } else {
           plugin.artifactId
         }
-    val version =
-        if (plugin.version.contains("\${")) {
-          resolveFromMavenProperties(
-              plugin.version.substring(2, plugin.version.lastIndexOf("}")), properties)
-        } else {
-          plugin.version ?: ""
-        }
+    var version: String = ""
+    if (plugin.version == null) {
+      Log.error("null version for $groupId:$artifactId")
+      version = ""
+    } else {
+      version =
+          if (plugin.version.contains("\${")) {
+            resolveFromMavenProperties(
+                plugin.version.substring(2, plugin.version.lastIndexOf("}")), properties)
+          } else {
+            plugin.version ?: ""
+          }
+    }
     return DependencySpec(
         groupId = groupId,
         artifactId = artifactId,
