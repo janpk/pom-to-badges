@@ -1,5 +1,5 @@
 name: 'Pom To Badges'
-description: 'Description of my action'
+description: 'A simple action that takes a list of maven pom dependencies to create version badges for'
 inputs:
   github-token:
     description: 'GitHub token'
