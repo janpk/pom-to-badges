@@ -4,12 +4,12 @@ import dev.hagastua.action.pomtobadges.MavenPomUtils.buildKnownDependenciesFromM
 import io.quarkiverse.githubaction.Action
 import io.quarkiverse.githubaction.Inputs
 import io.quarkus.logging.Log
+import java.io.File
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.decodeFromStream
 import org.silentsoft.badge4j.Badge
 import org.silentsoft.badge4j.Style
-import java.io.File
 
 open class PomToBadgesAction {
 
